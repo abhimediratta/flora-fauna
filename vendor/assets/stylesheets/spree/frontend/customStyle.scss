@@ -1,0 +1,13 @@
+@import "mixins/helper_mixins";
+@import "font-awesome";
+#spree-header {
+  background: #FFF;
+}
+
+.header-shadow {
+	@include header-shadow;
+}
+
+.subHeader-shadow {
+	@include subHeader-shadow;
+}
