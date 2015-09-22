@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+
+  spree:
+    recently_viewed_products: "Recently Viewed"

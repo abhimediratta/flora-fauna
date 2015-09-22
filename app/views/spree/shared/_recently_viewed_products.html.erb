@@ -1,0 +1,19 @@
+<% if cached_recently_viewed_products.any? %>
+  <div id="recently_viewed" data-hook>
+    <h3 class="product-section-title"><%= Spree.t(:recently_viewed_products) %></h3>
+    <div id="recently_viewed_products" class="small">
+      <% cached_recently_viewed_products.each do |product| %>
+      	<% url = spree.product_url(product, taxon_id: @taxon.try(:id)) %>
+      	<div class="panel panel-default inline-blk margin-all">
+      		<div class="panel-body text-center">
+      			<%= link_to mini_image(product, itemprop: "image"), url, itemprop: 'url' %><br/>
+      			<%= link_to truncate(product.name, length: 20), url, class: 'info', itemprop: "name", title: product.name %>
+      			<br/>
+      			<%= display_price(product) %>
+  			</div>
+		</div>
+        	<!-- <li class="list-group-item"><%#= link_to product.name, product %></li> -->
+      <% end -%>
+    </div>
+  </div>
+<% end %>
