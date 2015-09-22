@@ -2,12 +2,16 @@
 @import "custom_variables";
 @import "font-awesome";
 
-.header-shadow {
+.header {
 	@include header-shadow;
+	border-radius: 10px;
+	padding: 10px 0;
 }
 
-.subHeader-shadow {
-	@include subHeader-shadow;
+.subHeader {
+	@include header-shadow;
+	border-radius: 10px;
+	margin-top: 10px;
 }
 
 .top-buffer {

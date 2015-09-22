@@ -1,9 +1,9 @@
 @mixin header-shadow {
-	box-shadow: 0 2px 3px -2px gray;
+	box-shadow: 0px 0px 6px -2px gray;
 }
 
 @mixin subHeader-shadow {
-    box-shadow: 0px 2px 5px -3px gray;
+    box-shadow: 0px 2px 12px -5px gray;
 }
 
 @mixin inline-block {
