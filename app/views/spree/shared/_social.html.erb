@@ -1,0 +1,15 @@
+<div id="social-signin-links" class="top-buffer">
+  <% if (!spree_current_user || !spree_current_user.user_authentications) && Spree::AuthenticationMethod.active_authentication_methods? %>
+    <h4><%= Spree.t(:sign_in_through_one_of_these_services) %></h4>
+  <% end %>
+
+  <% Spree::AuthenticationMethod.available_for(@spree_user).each do |method| %>
+  	<button class="btn btn-fb">
+  		<%= content_tag(:i, '', class: "fa fa-facebook") %>
+    	<%= link_to("Facebook",
+          spree.spree_user_omniauth_authorize_url(provider: method.provider),
+          id: method.provider.to_url,
+          title: Spree.t(:sign_in_with, provider: method.provider)) if method.active %>
+	</button>          
+  <% end %>
+</div>

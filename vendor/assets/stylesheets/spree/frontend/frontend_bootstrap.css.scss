@@ -1,0 +1,63 @@
+// Core
+@import "bootstrap-sprockets";
+@import "custom_variables";
+@import "bootstrap";
+
+.btn-fb {
+  background: $facebook-color;
+
+  &:hover {
+    background: $gray-lighter;
+    a {
+      color: $facebook-color;
+    }
+
+    i {
+      color: $facebook-color;
+    }
+  }
+  
+  a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  i {
+    color: white; 
+  }
+}
+
+#spree-header {
+  background: #FFF;
+  margin-bottom: $line-height-computed;
+
+  #header {
+    padding: 20px 0 0 0;
+  }
+
+  #logo {
+    padding-top: 13px;
+
+    img {
+      width: 306px;
+    }
+  }
+
+  .nav a {
+    color: $prakriti-color;
+
+    &:hover, &:focus {
+      background: rgba($prakriti-color, 0.6);
+      color: white;
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+
+  #top-nav-bar {
+    padding-top: 4px;
+  }
+}

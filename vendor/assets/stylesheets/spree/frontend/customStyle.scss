@@ -1,8 +1,6 @@
 @import "mixins/helper_mixins";
+@import "custom_variables";
 @import "font-awesome";
-#spree-header {
-  background: #FFF;
-}
 
 .header-shadow {
 	@include header-shadow;
@@ -10,4 +8,8 @@
 
 .subHeader-shadow {
 	@include subHeader-shadow;
+}
+
+.top-buffer {
+	margin-top: 20px;
 }
