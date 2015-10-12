@@ -8,7 +8,7 @@
   		<%= content_tag(:i, '', class: "fa fa-facebook") %>
     	<%= link_to("Facebook",
           spree.spree_user_omniauth_authorize_url(provider: method.provider),
-          id: method.provider.to_url,
+          id: method.provider,
           title: Spree.t(:sign_in_with, provider: method.provider)) if method.active %>
 	</button>          
   <% end %>
