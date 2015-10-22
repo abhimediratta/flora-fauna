@@ -1,6 +1,12 @@
 @import "mixins/helper_mixins";
 @import "custom_variables";
 @import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Philosopher:400,700);
+
+body {
+	font-family: 'Philosopher', sans-serif;
+}
+
 
 .header {
 	@include header-shadow;

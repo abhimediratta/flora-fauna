@@ -3,6 +3,10 @@
 @import "custom_variables";
 @import "bootstrap";
 
+h3,h4 {
+  color: $prakriti-color;
+}
+
 .btn-fb {
   background: $facebook-color;
 
@@ -47,7 +51,7 @@
 
   .nav a {
     color: $prakriti-color;
-
+    border-radius: 5px;
     &:hover, &:focus {
       background: rgba($prakriti-color, 0.6);
       color: white;
